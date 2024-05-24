@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package sorpc.product;
+
+option go_package = "proto/product";
+
+import "proto/product/product.proto";
+
+service ProductService {
+  rpc GetProduct (GetProductRequest) returns (GetProductResponse);
+  rpc CreateProduct (CreateProductRequest) returns (CreateProductResponse);
+}

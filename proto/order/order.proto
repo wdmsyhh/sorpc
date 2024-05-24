@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package sorpc.order;
+
+option go_package = "proto/order";
+
+message GetOrderRequest {
+  string id = 1;
+}
+
+message GetOrderResponse {
+  string id = 1;
+  string name = 2;
+}

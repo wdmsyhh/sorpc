@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package sorpc.order;
+
+option go_package = "proto/order";
+
+import "proto/order/order.proto";
+
+service OrderService {
+  rpc GetOrder (GetOrderRequest) returns (GetOrderResponse);
+}

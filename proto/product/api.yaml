@@ -1,0 +1,10 @@
+type: google.api.Service
+config_version: 3
+
+http:
+  rules:
+    - selector: sorpc.product.ProductService.GetProduct
+      get: /v2/products/{id}
+    - selector: sorpc.product.ProductService.CreateProduct
+      post: /v2/products
+      body: "*"
